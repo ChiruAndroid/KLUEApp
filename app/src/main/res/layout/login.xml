@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/login"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/size_titles_20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginTop="15dp"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120sp"
+                    android:layout_height="50sp"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:src="@mipmap/klue_logo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/hello_there"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/size_titles_20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/welcome_back"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/size_titles_20sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:hint="@string/email"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="@dimen/size_titles_20sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:background="@color/colorBorder" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:hint="@string/password"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="@dimen/size_titles_20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:background="@color/colorBorder" />
+
+                <LinearLayout
+                    android:id="@+id/forgot_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/forgot_your_password"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/size_titles_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/login_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10dp">
+
+                    <Button
+                        android:id="@+id/signinbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:background="@drawable/fulbuttonborder"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/sign_in"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/size_titles_20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/don_t_have_an_account"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorLightGray"
+                        android:textSize="@dimen/size_titles_14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/register"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/size_titles_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/terms_conditions_apply"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorLightGray"
+                        android:textSize="@dimen/size_titles_14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

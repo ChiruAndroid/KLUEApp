@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rview_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rview_cart"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:outlineProvider="bounds"
+        android:padding="@dimen/padding_20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/subtotal"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_titles_16sp" />
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="0.00"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_titles_16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/continue_shop"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/fulbuttonborder"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingLeft="@dimen/margin_left_20dp"
+            android:paddingRight="@dimen/margin_right_20dp"
+            android:text="@string/Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_titles_20sp" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/bottom_layout" />
+</LinearLayout>
+

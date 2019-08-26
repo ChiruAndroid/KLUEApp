@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10dp">
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="right"
+                android:text="@string/select_language"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/size_titles_16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@mipmap/flower_icon" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="@dimen/margin_15dp"
+                android:src="@mipmap/klue_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="@string/easiest_way_to_shop_online"
+                android:textColor="#000000"
+                android:textSize="@dimen/size_titles_22sp" />
+
+            <TextView
+                android:id="@+id/select_city"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_10dp"
+                android:text="@string/select_city"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="@dimen/size_titles_18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_margin="@dimen/margin_5dp"
+                android:background="#404040" />
+
+            <TextView
+                android:id="@+id/guest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="@string/browse_as_guest"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/size_titles_20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/layout_bg_white"
+                android:clipToPadding="true"
+                android:orientation="horizontal"
+                android:padding="2sp">
+
+                <Button
+                    android:id="@+id/signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/buttonborder_left"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/sign_in"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/size_titles_20sp" />
+
+                <LinearLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary" />
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/buttonborder_right"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/size_titles_20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

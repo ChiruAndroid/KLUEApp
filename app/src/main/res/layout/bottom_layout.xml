@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:padding="@dimen/padding_5dp"
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/image_selector"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/home"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/size_titles_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_top_pics"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/image_selector_top"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/top_pics"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/size_titles_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_categories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/image_selector_cat"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/colorAccent"
+                android:gravity="center"
+                android:text="@string/categories"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/size_titles_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_whishlist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/image_selector_fav"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/whislist"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/size_titles_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/image_selector_acc"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/account"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/size_titles_12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

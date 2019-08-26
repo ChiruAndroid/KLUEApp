@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:overScrollMode="never">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="@dimen/margin_left_10dp"
+                android:layout_marginRight="@dimen/margin_right_10dp"
+                android:layout_marginTop="@dimen/margin_top_5dp"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true" />
+
+                <LinearLayout
+                    android:id="@+id/home_indicators"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorSepraterLine" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rview_cat_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:layout_weight="1"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorSepraterLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/new_arrival"
+                        android:textColor="@color/colorCategories"
+                        android:textSize="@dimen/size_titles_18sp" />
+
+                    <Button
+                        android:id="@+id/view_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/fulbuttonborder"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/view_all"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/size_titles_12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorSepraterLine" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rview_new_arrivals"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:visibility="gone"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:id="@+id/rl_view_pager1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_10dp"
+                android:layout_marginRight="@dimen/margin_right_10dp"
+                android:layout_marginBottom="@dimen/margin_bottom_5dp"
+                      android:layout_marginTop="@dimen/margin_top_5dp"
+                android:orientation="vertical">
+
+                <com.volive.klueapp.utils.CustomViewPager
+                    android:id="@+id/pager_adds"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_alignParentTop="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

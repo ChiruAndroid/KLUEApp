@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/back_arrow" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/register"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/size_titles_20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_bottom_20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_left_20dp"
+                android:layout_marginRight="@dimen/margin_right_20dp"
+                android:layout_marginTop="@dimen/margin_top_20dp"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120sp"
+                    android:layout_height="50sp"
+                    android:src="@mipmap/klue_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/create_an_account"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/size_titles_20sp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_30dp"
+                    android:background="@null"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:hint="@string/name"
+                    android:singleLine="true"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@color/colorLightGray"
+                    android:textSize="@dimen/size_titles_20sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="@dimen/margin_top_15dp"
+                    android:background="@color/colorBorder" />
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_30dp"
+                    android:background="@null"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:hint="@string/email"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/colorLightGray"
+                    android:textSize="@dimen/size_titles_20sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="@dimen/margin_top_15dp"
+                    android:background="@color/colorBorder" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_30dp"
+                    android:background="@null"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:hint="@string/password_reg"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/colorLightGray"
+                    android:textSize="@dimen/size_titles_20sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="@dimen/margin_top_15dp"
+                    android:background="@color/colorBorder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/countrySpinner"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_15dp" />
+
+                    <EditText
+                        android:id="@+id/number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_15dp"
+                        android:background="@null"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="@string/mobile_number"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:textColor="@color/colorLightGray"
+                        android:textSize="@dimen/size_titles_20sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="@dimen/margin_top_15dp"
+                    android:background="@color/colorBorder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_20dp">
+
+                    <Button
+                        android:id="@+id/createaccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:background="@drawable/fulbuttonborder"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/create_account"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/size_titles_20sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_right_10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/already_have_an_account"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorLightGray"
+                        android:textSize="@dimen/size_titles_14sp" />
+
+                    <TextView
+                        android:id="@+id/txt_signin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/signin"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/size_titles_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/terms_conditions_apply"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorLightGray"
+                        android:textSize="@dimen/size_titles_14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

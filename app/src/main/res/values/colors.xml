@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BF9958</color>
+    <color name="colorPrimaryLigh">#75ba9149</color>
+    <color name="colorPrimaryDark">#8B6628</color>
+    <color name="colorAccent">#484848</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackAcent">#cb000000</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDarkGray">#9b8d8d</color>
+    <color name="colorBorder">#D9D9D9</color>
+    <color name="colorLightGray">#9D9D9D</color>
+    <color name="colorOTPBorder">#C2C2C2</color>
+    <color name="colorAppbg">#f6f6f6</color>
+    <color name="colorGreen">#1F8726</color>
+    <color name="colorPaymentText">#4D4D4D</color>
+    <color name="colorRadioBorder">#A9ABB2</color>
+    <color name="colorCategories">#767676</color>
+    <color name="colorSepraterLine">#F3F4F5</color>
+    <color name="colorFooterName">#A8A8A8</color>
+    <color name="colorScreenBg">#F2F2F2</color>
+    <color name="colorAddress">#5E5E5E</color>
+    <color name="colorCardRadius">#B2B2B2</color>
+    <color name="colorAddAddress">#7A7A7A</color>
+    <color name="colorAddForm">#2A2A2A</color>
+    <color name="colorOrder">#757575</color>
+    <color name="white">#ffffff</color>
+</resources>

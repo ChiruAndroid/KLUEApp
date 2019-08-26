@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.volive.klueapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW"
+        tools:node="remove" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Splash2"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OnBoardingScreen"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Login"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Register"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OTPScreen"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyAddressActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Filters"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PaymentSuccessful"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SubcategoryActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Anniversary"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Brand"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Notifications"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProductDetails"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ShoppingCart"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OrderSummary"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddNewAddress"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Payment_Method"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyOrder"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OrderDetails"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.NewArrivals" />
+        <activity android:name=".activities.ResetPassword" />
+        <activity
+            android:name=".activities.GiftsCardsActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <receiver
+            android:name=".utils.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.ShippingMethodsActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.HelpCenterActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OccationsSubCategory"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

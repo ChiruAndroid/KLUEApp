@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rview_myorders_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/card_layout"
+        android:layout_below="@+id/header"
+        android:overScrollMode="never" />
+        <include layout="@layout/bottom_layout" />
+</RelativeLayout>

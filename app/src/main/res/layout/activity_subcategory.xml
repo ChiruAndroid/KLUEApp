@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppbg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/custom_toolbar" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rview_flowers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/card_layout"
+        android:layout_below="@+id/header"
+        android:layout_margin="@dimen/margin_5dp"
+        android:overScrollMode="never" />
+    <include layout="@layout/bottom_layout" />
+
+</RelativeLayout>

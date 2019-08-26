@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ZopimChatTheme" parent="ZopimChatTheme.Light">
+        <!-- Customize chat theme here. -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="no_agents_button">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Customize toolbar that replaces action bar-->
+    <style name="zopim_toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <!--Customize where chat widget appears-->
+    <style name="chat_widget" parent="_chat_widget">
+        <item name="anchor">bottom_left</item>
+    </style>
+
+    <!--Customize chat colors-->
+    <color name="chat_bubble_visitor">@color/colorPrimary</color>
+
+    <!--<style name="chat_row_event_message">-->
+        <!--// style this view-->
+    <!--</style>-->
+
+    <!--<style name="chat_member_event">-->
+        <!--// style this view-->
+    <!--</style>-->
+
+    <!--<style name="pre_chat_form_selected_item">-->
+        <!--// style this view-->
+    <!--</style>-->
+
+    <!--<style name="chat_bubble_visitor">-->
+        <!--// style this view-->
+    <!--</style>-->
+
+    <!--<style name="chat_bubble_agent">-->
+        <!--// style this view-->
+    <!--</style>-->
+
+    <!--<style name="chat_bubble_agent_name">-->
+        <!--// style this view-->
+    <!--</style>-->
+
+    <!--<style name="chat_input_field">-->
+        <!--// style this view-->
+    <!--</style>-->
+
+    <!--<color name="chat_bubble_agent">@color/colorPrimaryDark</color>-->
+    <!--&lt;!&ndash;<color name="chat_bubble_visitor">@android:color/darker_gray</color>&ndash;&gt;-->
+
+    <!--&lt;!&ndash; dimensions &ndash;&gt;-->
+    <!--<dimen name="chat_log_padding">16dp</dimen>-->
+    <!--<dimen name="agent_avatar_max_size">40dp</dimen>-->
+    <!--<dimen name="agent_avatar_margin_right">16dp</dimen>-->
+    <!--<dimen name="chat_bubble_min_height">4dp</dimen>-->
+    <!--<dimen name="chat_bubble_min_width">4dp</dimen>-->
+    <!--<dimen name="chat_bubble_radius">10dp</dimen>-->
+    <!--<dimen name="chat_bubble_padding">10dp</dimen>-->
+    <!--<dimen name="chat_bubble_vertical_margin">8dp</dimen>-->
+    <!--<dimen name="chat_row_vertical_margin">20dp</dimen>-->
+    <!--<dimen name="chat_bubble_visitor_margin_left">112dp</dimen>-->
+    <!--<dimen name="chat_bubble_agent_margin_right">56dp</dimen>-->
+    <!--<dimen name="typing_indicator_diameter">8dp</dimen>-->
+    <!--<dimen name="typing_indicator_spacing">2dp</dimen>-->
+    <!--<dimen name="chat_input_container_padding_bottom">5dp</dimen>-->
+    <!--<dimen name="lead_message_padding_top">16dp</dimen>-->
+    <!--<dimen name="chat_message_padding_top">0dp</dimen>-->
+
+
+
+    <style name="no_connection_error_view_title">
+        // style this view
+    </style>
+
+    <style name="no_connection_error_view_text">
+        // style this view
+    </style>
+
+    <style name="no_connection_view_container">
+        // style this view
+    </style>
+    <style name="no_connection_view_separator">
+        // style this view
+    </style>
+
+    <style name="no_connection_view_text">
+        // style this view
+    </style>
+
+    <!-- colors -->
+    <color name="no_connection_view_container_background_color">#434343</color>
+    <color name="no_connection_view_separator_color">@android:color/black</color>
+    <color name="no_connection_view_text_color">@android:color/white</color>
+
+    <!-- dimensions -->
+    <dimen name="no_connection_error_view_asset_padding">12dp</dimen>
+    <dimen name="no_connection_error_view_padding">6dp</dimen>
+    <dimen name="no_connection_view_separator_height">2px</dimen>
+    <dimen name="no_connection_view_padding">16dp</dimen>
+
+
+</resources>

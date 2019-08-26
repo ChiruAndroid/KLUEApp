@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/fltr_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSepraterLine"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/padding_15dp"
+            android:text="@string/price"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_titles_20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_left_15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/price_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:padding="2dp"
+                        android:text="SAR"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/size_titles_18sp" />
+
+                    <TextView
+                        android:id="@+id/pdt_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="530"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/size_titles_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pdt_price_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:padding="2dp"
+                        android:text="SAR"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/size_titles_18sp" />
+
+                    <TextView
+                        android:id="@+id/pdt_price_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="530"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/size_titles_18sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                android:id="@+id/rangeSeekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_color="@color/colorPrimary"
+                app:bar_highlight_color="@color/colorPrimaryDark"
+                app:corner_radius="10"
+                app:data_type="_integer"
+                app:gap="20"
+                app:left_thumb_color="@color/colorPrimary"
+                app:left_thumb_color_pressed="@color/colorPrimaryDark"
+                app:max_value="5000"
+                app:min_value="20"
+                app:right_thumb_color="@color/colorPrimary"
+                app:right_thumb_color_pressed="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/colorSepraterLine" />
+
+        <LinearLayout
+            android:id="@+id/brand_pg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSepraterLine"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/brand"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/size_titles_20sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/next_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_top_15dp"
+            android:background="@color/colorSepraterLine" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/filter_apply"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/fulbuttonborder"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/apply"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_titles_20sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btn_home"
+        android:checked="true"
+        android:icon="@mipmap/home"
+        app:showAsAction="ifRoom"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/btn_top_pics"
+        android:checked="false"
+        android:icon="@mipmap/start_icon"
+        android:title="@string/top_pics" />
+    <item
+        android:id="@+id/btn_catogerys"
+        android:checked="false"
+        android:icon="@mipmap/categories"
+        app:showAsAction="ifRoom"
+        android:title="@string/categories" />
+    <item
+        android:id="@+id/btn_wishlist"
+        android:checked="false"
+        android:icon="@mipmap/whishlist"
+        app:showAsAction="ifRoom"
+        android:title="@string/whislist" />
+
+    <item
+        android:id="@+id/btn_account"
+        android:checked="false"
+        android:icon="@mipmap/account"
+        app:showAsAction="ifRoom"
+        android:title="@string/account" />
+</menu>

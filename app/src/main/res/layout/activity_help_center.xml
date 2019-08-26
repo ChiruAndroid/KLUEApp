@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:context=".activities.HelpCenterActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margin_top_40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3dp"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/address1"
+                android:textColor="@color/colorOrder"
+                android:textSize="@dimen/size_titles_14sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Address"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_titles_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3dp"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/email1"
+                android:textColor="@color/colorOrder"
+                android:textSize="@dimen/size_titles_14sp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="mail@gmail.com"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_titles_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_phn_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3dp"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/mobile_no"
+                android:textColor="@color/colorOrder"
+                android:textSize="@dimen/size_titles_14sp" />
+
+            <TextView
+                android:id="@+id/phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="12345678920"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_titles_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3dp"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/pincode"
+                android:textColor="@color/colorOrder"
+                android:textSize="@dimen/size_titles_14sp" />
+
+            <TextView
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="231456"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_titles_14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/bottom_layout" />
+
+</LinearLayout>

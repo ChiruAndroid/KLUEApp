@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#BF9958">
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/close_white_ic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/margin_left_20dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/payment_successful"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/size_titles_20sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_30dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@mipmap/payment_success_ic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:lineSpacingExtra="3sp"
+                        android:text="@string/payment_successful"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorGreen"
+                        android:textSize="@dimen/size_titles_20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:lineSpacingExtra="3sp"
+                        android:text="@string/your_payment_has_been_processed_details_of_transactions_are_included_below"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/size_titles_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_50dp"
+                    android:layout_marginTop="@dimen/margin_top_30dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom_20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/amount"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/size_titles_18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_price_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="SAR"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/size_titles_18sp" />
+
+                            <TextView
+                                android:id="@+id/tv_order_price"
+                                android:layout_width="match_parent"
+                                android:layout_weight="0.4"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="860.1"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/size_titles_18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom_20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/order_id"
+                            android:textColor="@color/colorPaymentText"
+                            android:textSize="@dimen/size_titles_14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_order_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="#2165S1F5"
+                            android:textColor="@color/colorPaymentText"
+                            android:textSize="@dimen/size_titles_14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_titles_20sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/payment_type"
+                            android:textColor="@color/colorPaymentText"
+                            android:textSize="@dimen/size_titles_14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_payment_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Credit Card"
+                            android:textColor="@color/colorPaymentText"
+                            android:textSize="@dimen/size_titles_14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom_20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/transaction_time"
+                            android:textColor="@color/colorPaymentText"
+                            android:textSize="@dimen/size_titles_14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_transaction_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="04-01-2017"
+                            android:textColor="@color/colorPaymentText"
+                            android:textSize="@dimen/size_titles_14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null">
+
+                    <Button
+                        android:id="@+id/payment"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/fulbuttonborder"
+                        android:backgroundTint="@null"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:linksClickable="false"
+                        android:text="@string/continue_shopping"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/size_titles_20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

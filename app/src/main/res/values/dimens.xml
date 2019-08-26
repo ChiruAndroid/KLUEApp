@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="size_titles_10sp">10sp</dimen>
+    <dimen name="size_titles_12sp">12sp</dimen>
+    <dimen name="size_titles_13sp">13sp</dimen>
+    <dimen name="size_titles_14sp">14sp</dimen>
+    <dimen name="size_titles_16sp">16sp</dimen>
+    <dimen name="size_titles_18sp">18sp</dimen>
+    <dimen name="size_titles_20sp">20sp</dimen>
+    <dimen name="size_titles_22sp">22sp</dimen>
+
+    <dimen name="margin_3dp">3dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+
+    <dimen name="menu_icon_size">48dp</dimen>
+
+    <dimen name="margin_right_5dp">5dp</dimen>
+    <dimen name="margin_right_10dp">10dp</dimen>
+    <dimen name="margin_right_15dp">15dp</dimen>
+    <dimen name="margin_right_20dp">20dp</dimen>
+    <dimen name="margin_right_35dp">35dp</dimen>
+    <dimen name="margin_right_40dp">40dp</dimen>
+
+    <dimen name="margin_left_5dp">5dp</dimen>
+    <dimen name="margin_left_10dp">10dp</dimen>
+    <dimen name="margin_left_15dp">15dp</dimen>
+    <dimen name="margin_left_20dp">20dp</dimen>
+    <dimen name="margin_left_30dp">30dp</dimen>
+    <dimen name="margin_left_35dp">35dp</dimen>
+    <dimen name="margin_left_40dp">40dp</dimen>
+
+    <dimen name="margin_top_5dp">5dp</dimen>
+    <dimen name="margin_top_10dp">10dp</dimen>
+    <dimen name="margin_top_15dp">15dp</dimen>
+    <dimen name="margin_top_20dp">20dp</dimen>
+    <dimen name="margin_top_30dp">30dp</dimen>
+    <dimen name="margin_top_40dp">40dp</dimen>
+
+    <dimen name="margin_bottom_5dp">5dp</dimen>
+    <dimen name="margin_bottom_10dp">10dp</dimen>
+    <dimen name="margin_bottom_15dp">15dp</dimen>
+    <dimen name="margin_bottom_20dp">20dp</dimen>
+    <dimen name="margin_bottom_30dp">30dp</dimen>
+    <dimen name="margin_bottom_40dp">40dp</dimen>
+    <dimen name="margin_bottom_50dp">50dp</dimen>
+
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="padding_50dp">50dp</dimen>
+
+</resources>

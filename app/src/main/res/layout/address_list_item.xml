@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="@dimen/margin_5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3dp"
+                android:checked="false"
+                android:drawablePadding="0dp"
+                android:theme="@style/MyRaidoButtonTwo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_3dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="John Snow"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/size_titles_18sp" />
+
+                    <ImageView
+                        android:id="@+id/edit_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/edit" />
+
+                    <ImageView
+                        android:id="@+id/delete_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/delete_ic" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/address_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Al Olaya Street | P.O. Box 9295, Riyadh"
+                    android:textColor="@color/colorAddress"
+                    android:textSize="@dimen/size_titles_14sp" />
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="12241, Saudi Arabia"
+                    android:textColor="@color/colorAddress"
+                    android:textSize="@dimen/size_titles_14sp" />
+
+                <TextView
+                    android:id="@+id/landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Opp0"
+                    android:textColor="@color/colorAddress"
+                    android:textSize="@dimen/size_titles_14sp" />
+
+                <TextView
+                    android:id="@+id/mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="johnsnow@gmail.com"
+                    android:textColor="@color/colorAddress"
+                    android:textSize="@dimen/size_titles_14sp" />
+
+                <TextView
+                    android:id="@+id/phn_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="+966 4584854654"
+                    android:textColor="@color/colorAddress"
+                    android:textSize="@dimen/size_titles_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
